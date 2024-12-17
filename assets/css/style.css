@@ -958,11 +958,31 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 120px;
-  border-radius: 50%;
+  width: 400px; /* Increase size for certificates */
+  height: 200px; /* Ensure it's square */
+  border-radius: 0; /* Remove the circular shape */
   border: 4px solid #fff;
   margin: 0 auto;
+  object-fit: cover; /* Ensure images maintain aspect ratio */
 }
+
+.testimonials .btn-view-credential {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0563bb;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.testimonials .btn-view-credential:hover {
+  background-color: #03478a;
+}
+
 
 .testimonials .testimonial-item h3 {
   font-size: 20px;
