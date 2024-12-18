@@ -349,6 +349,36 @@ h6 {
   }
 }
 
+.scroll-down-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.scroll-down-indicator a {
+  color: #fff;
+  font-size: 32px;
+  text-decoration: none;
+  display: inline-block;
+  animation: bounce 10s infinite ease-in-out; /* Duration set to 10 seconds */
+}
+
+.scroll-down-indicator a:hover {
+  color: #ffb347;
+}
+
+@keyframes bounce {
+  0%, 90%, 100% {
+    transform: translateY(0);
+  }
+  95% {
+    transform: translateY(-10px);
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
